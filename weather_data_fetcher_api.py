@@ -2,11 +2,14 @@ import requests
 import json
 import os
 from datetime import datetime
+from dotenv import load_dotenv
 
 USE_OPEN_METEO = True
 
 # OpenWeatherMap
-OWM_API_KEY = "a9b4943b0be63e51570ce4a45934f698"
+load_dotenv()
+
+OWM_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 CITY = "Philadelphia"
 OWM_URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={OWM_API_KEY}&units=metric"
 
