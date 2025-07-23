@@ -1,0 +1,34 @@
+# Ignore virtual environments
+venv/
+
+# Ignore file with API KEY for Open Weather API
+.env
+
+# Ignore Python bytecode/cache
+__pycache__/
+*.pyc
+
+# Ignore IDE configs
+.idea/
+.vscode/
+
+# Ignore model weights and scalers
+*.pth
+*.pkl
+
+# Ignore runtime/generated files
+*.csv
+*.json
+*.png
+
+# Ignore evaluation output
+evaluation_results/
+
+# Ignore shell/utility scripts (optional)
+manage_venv.sh
+check_gpu.py
+test_gpu.py
+
+# Ignore predicted output
+predicted_weather_today.csv
+api_counter.json
